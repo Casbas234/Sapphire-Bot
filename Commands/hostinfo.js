@@ -7,7 +7,7 @@ exports.run = (client, msg, args) => {
         },
           fields: [{
             name: ":information_source: System Information",
-            value: `win32-ia32 with node version 9.2.0`
+            value: ``
           },
               {
             name: ":computer: Hosting in",
@@ -19,7 +19,7 @@ exports.run = (client, msg, args) => {
           },
           {
             name: ":bar_chart: Used RAM (by Sapphire)",
-            value: `4.4MB of 4GB RAM`
+            value: `NaN of NaN RAM`
           },
         ],
         footer: {
