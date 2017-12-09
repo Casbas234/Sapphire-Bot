@@ -1,6 +1,8 @@
 # Sapphire-Bot
 A bot that does moderation, utility, and fun
 
+### Feel free to contribute to this bot
+
 # Features
 This bot has the following features as of now:
   * Facts
