@@ -1,12 +1,13 @@
 exports.run = (client, msg, args) => {
     if(!msg.member.roles.some(r=>["Sapphire Mod"].includes(r.name)) )
-    return msg.channel.send(":x: You need **Sapphire Mod** role in order to use this command!");
+    return msg.channel.send(`:x: You need **Sapphire Mod** role in order to use this command!
+SappWarn code: 0x0020`);
     let thing = args.join(" ");
     msg.delete();
     msg.channel.send({embed: {
-        color: 889999,
+        color: 0x194596,
         author: {
-          name: `Announcement from ${msg.author.tag}`,
+          name: `${msg.author.tag} - Announcement`,
           icon_url: msg.author.avatarURL
         },
         description: `${thing}`,
