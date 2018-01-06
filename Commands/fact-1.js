@@ -1,6 +1,6 @@
 exports.run = (client, msg, args) => {
       msg.channel.send({embed: {
-        color: 194596,
+        color: 0x194596,
         author: {
           name: `${client.user.username}`,
           icon_url: client.user.avatarURL
