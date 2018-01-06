@@ -1,6 +1,6 @@
 exports.run = (client, msg, args) => {
     msg.channel.send({embed: {
-      color: 194596,
+      color: 0x194596,
       author: {
         name: `${client.user.username} documentation for fact command`,
         icon_url: client.user.avatarURL
@@ -11,7 +11,7 @@ exports.run = (client, msg, args) => {
       },
       {
         name: "Usage",
-        value: `s!%fact-X (replace the X with an available number)`
+        value: `%fact-X (replace the X with an available number)`
       },
     ],
       footer: {
