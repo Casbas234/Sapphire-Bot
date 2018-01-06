@@ -1,6 +1,19 @@
-exports.run = (client, msg, args) => {
-    msg.channel.send(`:information_source: Here's the avatar for **${msg.author.tag}**!
-${msg.author.avatarURL}`);
-    console.log(`[info] Treating ${msg.content} by ${msg.author.tag} from ${msg.guild} as a command.`);
-};
+exports.run = (client, msg, args) =>
+    msg.channel.send({embed: {
+            color: 0x194596,
+            author: {
+                name: client.user.username,
+                icon_url: client.user.avatarURL
+            },
+            title: `:frame_photo: ${msg.author.username}'s avatar!`,
+            image: {
+                url: msg.author.avatarURL
+            },
+            timestamp: new Date(),
+            footer: {
+                icon_url: msg.author.avatarURL,
+                text: `Requested by ${msg.author.tag}`
+            }
+        }
+    });
   config: {}
