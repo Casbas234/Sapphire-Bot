@@ -7,6 +7,8 @@ A bot that does moderation, utility, and fun
 This bot has the following features as of now:
   * Facts
   * Best informations
+  * Magic 8 Ball
+  * Fun
 
 This bot will improve even more in the future, including music and strike system commands
 
