@@ -1,11 +1,14 @@
 exports.run = (client, msg, args) => {
     msg.channel.send({embed: {
-        color: 194596,
+        color: 0x194596,
         author: {
           name: client.user.username,
           icon_url: client.user.avatarURL
         },
         description: `Information for **${msg.guild.name}**`,
+        thumbnail: {
+          url: msg.guild.iconURL
+           },
           fields: [{
             name: ":desktop: Server Name",
             value: `${msg.guild.name}`
@@ -16,24 +19,24 @@ exports.run = (client, msg, args) => {
           },
           {
             name: ":busts_in_silhouette: Members",
-            value: `${msg.guild.memberCount}`
+            value: `${msg.guild.memberCount}`,
+            inline: true
           },
           {
             name: ":bust_in_silhouette: Server Owner",
-            value: `${msg.guild.owner}`
+            value: `${msg.guild.owner}`,
+            inline: true
           },
           {
             name: ":earth_africa: Server Region",
-            value: `${msg.guild.region}`
+            value: `${msg.guild.region}`,
+            inline: true
           },
         ],
+        timestamp: new Date(),
         footer: {
-          icon_url: msg.guild.iconURL,
-          text: `Guild's icon`
+          icon_url: msg.author.avatarURL,
+          text: `Requested by ${msg.author.tag}`
             }
         }
-    });
-    console.log(`[info] Treating ${msg.content} by ${msg.author.tag} from ${msg.guild} as a command.`);
-    };
-      config: {}
     
