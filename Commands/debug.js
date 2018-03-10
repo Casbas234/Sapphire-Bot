@@ -13,7 +13,7 @@ exports.run = (client, msg, args, config) => {
           },
               {
             name: ":busts_in_silhouette: Maintainers and developers",
-            value: "`BriciWorld#1434 (ID: 327864603788967948) \nCasbas 234#5853 (ID: 328816161028571136)`",
+            value: "``",
             inline: true
           },
           {
