@@ -2,7 +2,7 @@ exports.run = (client, msg, args) => {
 
     let code = args.join(" ").slice(1);
 
-    if(msg.author.id !== OWNER ID) return;
+    if(msg.author.id !== "327864603788967948") return;
     try {
         const code = args.join(" ");
         let evaled = eval(code);
@@ -10,9 +10,20 @@ exports.run = (client, msg, args) => {
         if (typeof evaled !== "string")
             evaled = require("util").inspect(evaled);
 
-        msg.channel.send(clean(evaled), {code:"xl"});
+        msg.channel.send({embed: {
+                color: 0x194596,
+                title: `Evaluated!`,
+                description: `\`\`\`xl\n${clean(evaled)}\n\`\`\``,
+            }
+        });
+
     } catch (err) {
-        msg.channel.send(`\`ERROR\` \`\`\`xl\n${clean(err)}\n\`\`\``);
+        msg.channel.send({embed: {
+                color: 0xff0000,
+                title: `:x: Error while evaluating`,
+                description: `\`\`\`xl\n${clean(err)}\n\`\`\``,
+            }
+        });
     };
 
     function clean(text) {
