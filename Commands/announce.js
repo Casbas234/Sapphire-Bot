@@ -7,10 +7,16 @@ SappWarn code: 0x0020`);
     msg.channel.send({embed: {
         color: 0x194596,
         author: {
-          name: `${msg.author.tag} - Announcement`,
-          icon_url: msg.author.avatarURL
+          name: `${msg.author.tag}`,
         },
         description: `${thing}`,
+        thumbnail: {
+            url: msg.author.avatarURL
+             },
+             timestamp: new Date(),
+             footer: {
+                text: `Announcement`
+                  },
     }
     });
     console.log(`[info] Treating ${msg.content} by ${msg.author.tag} from ${msg.guild} as a command.`);
