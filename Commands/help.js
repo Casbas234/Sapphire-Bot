@@ -1,3 +1,25 @@
+exports.run = (client, msg, args) => {
+    msg.author.send({embed: {
+        color: 0x194596,
+        author: {
+          name: `${client.user.username}`,
+          icon_url: client.user.avatarURL
+        },
+        description: `You can use these commands in **${msg.guild.name}** with the prefix \`%\`.
+Contact \`BriciWorld#1434\` if you need any help using the bot.
+You can also join [Sapphire's Home](https://discord.gg/DqGgueq) for help.`
+    }
+    });
+msg.author.send({embed: {
+    color: 0x194596,
+    author: {
+      name: `${client.user.username}`,
+      icon_url: client.user.avatarURL
+    },
+    title: `:robot: Main`,
+    description: `\`\`\`info \nping \ncredits \ninvite \nsupport \nfeature <your feature> \ndebug \`\`\``
+}
+});
 msg.author.send({embed: {
   color: 0x194596,
   author: {
@@ -5,7 +27,7 @@ msg.author.send({embed: {
     icon_url: client.user.avatarURL
   },
   title: `:circus_tent: Fun`,
-  description: `\`\`\`flipcoin \nhi \nsay <something> \nembed <something> \nfish \nfact \njavascript \nyear \n8ball <question> \nroll \naembed <something>\`\`\``
+  description: `\`\`\`flipcoin \nhi \nsay <something> \nembed <something> \nfish \nfact \nrandomfact \njavascript \nyear \n8ball <question> \nroll \naembed <something> \ncat\`\`\``
 }
 });
 msg.author.send({embed: {
