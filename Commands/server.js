@@ -24,7 +24,7 @@ exports.run = (client, msg, args) => {
           },
           {
             name: ":bust_in_silhouette: Server Owner",
-            value: `${msg.guild.owner}`,
+            value: `**${msg.guild.owner.user.username}**#${msg.guild.owner.user.discriminator} (ID: ${msg.guild.owner.user.id})`,
             inline: true
           },
           {
@@ -39,4 +39,8 @@ exports.run = (client, msg, args) => {
           text: `Requested by ${msg.author.tag}`
             }
         }
+    });
+    console.log(`[info] Treating ${msg.content} by ${msg.author.tag} from ${msg.guild} as a command.`);
+    };
+      config: {}
     
