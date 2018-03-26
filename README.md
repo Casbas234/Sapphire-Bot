@@ -18,6 +18,11 @@ If you need help with this bot, join the support server: https://discord.gg/DqGg
 # Bot Invite Link
 Wanna invite this bot to your server? Use this link: https://discordapp.com/oauth2/authorize?&client_id=339088503977672706&scope=bot&permissions=-1
 
+# Developers
+BriciWorld#1434 - Founder and developer of Sapphire
+Ken#4234 - Web developer and bot developer
+Casbas 234#5853 - Developer
+
 Also, if you want to test new features for this bot, [add the beta](https://discordapp.com/oauth2/authorize?&client_id=377087253517697024&scope=bot&permissions=-1).
 
 # Final Notes
